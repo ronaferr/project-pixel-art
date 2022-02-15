@@ -43,3 +43,28 @@ function initialSelected() {
     }
 }
 initialSelected();
+
+function selectedColor() {
+    let color = document.getElementsByClassName('color');
+    let selcionado = 'color selected';
+    let naoselecionado = 'color';
+    console.log(color[1]);
+    //passar pelas cores
+    for (let i = 0; i < color.length; i += 1) {
+        for (let j = 0; j < color.length; j += 1) {
+
+        
+    // fazer um event
+    color[i].addEventListener('click', function(){
+        if (color[i] !== color[j]) {
+            color[i].className = selcionado;
+            color[j].className = naoselecionado;
+        } else {
+            color[i].className = selcionado;
+            color[j].className = selcionado;
+        }
+    })
+    }
+}
+}
+selectedColor();
