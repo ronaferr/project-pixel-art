@@ -73,7 +73,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 - Será `1` dia de projeto.
 
-- Data de entrega para avaliação final do projeto: `22/02/2022 14:00`.
+- Data de entrega para avaliação final do projeto: `24/02/2022 14:00`.
 
 ---
 
