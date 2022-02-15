@@ -22,7 +22,7 @@ createPixels();
     
     let pixel = document.querySelectorAll('.pixel');
     for (let i = 0; i < pixel.length, i += 1;) {
-        if (pixel[i].style.width = '50px') {
+        if (pixel[i].style.width === '50px') {
             pixel[i].style.width = '40px'
             pixel[i].style.height = '40px';
         }
@@ -32,3 +32,14 @@ createPixels();
 
 }
 mudaMedidas(); */
+
+function initialSelected() {
+    const classSelected = 'color selected';
+    let color = document.querySelectorAll('.color');
+    for (let i = 0; i < color.length; i += 1) {
+        if (color[i].style.backgroundColor === 'black') {
+            color[i].className = classSelected;
+        }
+    }
+}
+initialSelected();
