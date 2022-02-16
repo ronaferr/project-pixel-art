@@ -105,6 +105,7 @@ function buttonClear() {
     botao.id = idbut;
     botao.innerHTML = 'Limpar';
     botao.style.display = 'block';
+    botao.style.margin = '5px';
     mae.appendChild(botao);
 
     let pixel = document.getElementsByClassName('pixel');
