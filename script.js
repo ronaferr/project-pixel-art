@@ -97,7 +97,25 @@ for (let i = 0; i < pixelsBox.length; i += 1) {
 })
 }
 
+function buttonClear() {
+    //onde?
+    let mae = document.querySelector('#but');
+    let botao = document.createElement('button');
+    let idbut = 'clear-board';
+    botao.id = idbut;
+    botao.innerHTML = 'Limpar';
+    botao.style.display = 'block';
+    mae.appendChild(botao);
 
+    let pixel = document.getElementsByClassName('pixel');
+
+    botao.addEventListener('click', function(){
+        for(let i = 0; i < pixel.length; i += 1) {
+            pixel[i].style.backgroundColor = 'white';
+        }
+    })
+}
+buttonClear();
 
 /*  function paintPixel()
     let colorSelected = document.getElementsByClassName('selected');
